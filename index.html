@@ -5,20 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon"  href="./assets/img/favicon start.png">
-  <title>Progetto Javascript</title>
 </head>
 <body>
   
-<div class="contatore">
-  <h1>CONTATORE</h1>
-  <span id="counter">0</span>
-</div>
-<div>
-  <button id="incrementa">+</button>
-  <button id="decrementa">-</button>
-</div>
+<h1>Counter</h1>
+<p>Valore:<span id="counter">0</span></p>
+<label for="incrementa">incremento</label>
+<input type="number" id="incrementa" value="1">
+<button onclick="incrementa()">+</button>
 
-<button id="azzera">AZZERA</button>
+<label for="decrementa">decrementa</label>
+<input type="number" id="decrementa" value="1">
+<button onclick="decrementa()">-</button>
+
+<button onclick="azzera()">RESET</button>
+
 
 <script src="./assets/js/javascript.js"></script>
 </body>

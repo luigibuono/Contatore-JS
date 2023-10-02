@@ -1,25 +1,20 @@
-let incrementaNum = document.getElementById("incrementa");
-let decrementaNum = document.getElementById("decrementa");
-let azzera = document.getElementById("azzera");
-let contatore = document.getElementById("counter");
-
-
 let numero = 0;
+const valoreAttuale=document.getElementById("valore");
+const incrementaNumero=document.getElementById("incrementa");
+const decrementaNumero=document.getElementById("decrementa");
 
 function incrementa(){
- const incrementa = parseInt(incrementaNum.value);
+  const incrementa= parseInt(incrementaNumero.value);
   numero += incrementa;
-  counter.textContent = numero;
+  valoreAttuale.textContent = numero;
 }
 
 function decrementa(){
-  const decrementa = parseInt(decrementaNum.value):
+  const decrementa= parseInt(decrementaNumero.value);
   numero -= decrementa;
-  counter.textContent = numero;
+  valoreAttuale.textContent = numero;
 }
-
-function azzera(){
-  numero = 0;
-  counter.textContent = numero;
+function reset(){
+  numero = 0 ;
+  valoreAttuale.textContent= numero;
 }
-
